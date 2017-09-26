@@ -1,4 +1,4 @@
-# mongodb & [parse-server](http://parseplatform.org/)
+# mongodb & [parse-server](http://parseplatform.org/) & [parse-dashboard](https://github.com/parse-community/parse-dashboard)
 
 > Work in progress, testing...
 
