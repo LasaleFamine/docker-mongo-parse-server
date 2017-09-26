@@ -1,0 +1,9 @@
+{
+  "name": "parse-dashboard",
+  "scripts": {
+    "start": "parse-dashboard --config config.json --host 0.0.0.0 --port 4040"
+  },
+  "dependencies": {
+    "parse-dashboard": "*"
+  }
+}

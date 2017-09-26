@@ -2,7 +2,12 @@
 
 > Work in progress, testing...
 
-## Insta-run
+## Config(s)
+
+Check the `docker-compose.yml` to change the `APP_ID` and the `MASTER_KEY` for the `parse-server`.
+Then, make sure to connect the `parse-dashboard` checking the `parse-dashboard/config.json` and fix the configuration properly.
+
+## First run
 
     $ git clone https://github.com/LasaleFamine/docker-mongo-parse-server mongo-parse-server
     $ cd mongo-parse-server

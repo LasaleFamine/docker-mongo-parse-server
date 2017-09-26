@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "serverURL": "http://localhost:1337/parse",
+      "appId": "something_nice_and_secret",
+      "masterKey": "long-secret-awesome",
+      "appName": "MyApp"
+    }
+  ],
+  "users": [
+    {
+      "user":"foo",
+      "pass":"bar"
+    }
+  ]
+}

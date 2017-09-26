@@ -11,3 +11,9 @@ services:
       - MASTER_KEY=long-secret-awesome
     ports:
       - 1337:1337
+  parse-dashboard:
+    build: ./parse-dashboard
+    environment:
+        - PARSE_DASHBOARD_ALLOW_INSECURE_HTTP=1
+    ports:
+        - 4040:4040
