@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mongo-parse-server:
+    image: mongo
+  parse-server:
+    build: ./parse-server
+    links:
+      - mongo-parse-server:mongo
+    environment:
+      - APP_ID=something_nice_and_secret
+      - MASTER_KEY=long-secret-awesome
+    ports:
+      - 1337:1337
