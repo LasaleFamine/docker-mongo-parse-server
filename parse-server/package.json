@@ -1,9 +1,10 @@
 {
   "name": "parse-server",
   "scripts": {
-    "start": "parse-server --appId $APP_ID --masterKey $MASTER_KEY --databaseURI mongodb://mongo-parse-server/"
+    "start": "node index.js"
   },
   "dependencies": {
-    "parse-server": "*"
+    "parse-server": "*",
+    "express": "*"
   }
 }

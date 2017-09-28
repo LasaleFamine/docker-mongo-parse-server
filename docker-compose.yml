@@ -9,6 +9,14 @@ services:
     environment:
       - APP_ID=something_nice_and_secret
       - MASTER_KEY=long-secret-awesome
+      - GCM_SENDER_ID=gcm_id
+      - GCM_API_KEY=gcm_key
+      - PFX_PATH=path_to_certificate_p12
+      - PFX_PASS=passphrase_certificate
+      - APP_BUNDLE_ID=bundle_id
+      - IS_PRODUCTION=false
+    volumes:
+      - ./db:/data/db
     ports:
       - 1337:1337
   parse-dashboard:
