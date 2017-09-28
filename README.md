@@ -7,6 +7,17 @@
 Check the `docker-compose.yml` to change the `APP_ID` and the `MASTER_KEY` for the `parse-server`.
 Then, make sure to connect the `parse-dashboard` checking the `parse-dashboard/config.json` and fix the configuration properly.
 
+## APNS and GCM for Push Notifications
+You may want to send Push Notifications with the Parse server, you must configure GCM and APNS.
+> NOTE: don't forget to add the ***.p12*** certificate to your `parse-server` container. You can modify the `Dockerfile`:
+```
+...
+
+ADD ./path-to-certificate.p12 ${PARSE_HOME}
+...
+```
+
+
 ## First run
 
     $ git clone https://github.com/LasaleFamine/docker-mongo-parse-server mongo-parse-server
