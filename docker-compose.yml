@@ -11,8 +11,10 @@ services:
       - MASTER_KEY=long-secret-awesome
       - GCM_SENDER_ID=gcm_id
       - GCM_API_KEY=gcm_key
-      - PFX_PATH=path_to_certificate_p12
-      - PFX_PASS=passphrase_certificate
+      - PFX_PATH_DEV=path_to_certificate_p12
+      - PFX_PASS_DEV=passphrase_certificate
+      - PFX_PATH_PROD=path_to_certificate_p12
+      - PFX_PATH_PROD=passphrase_certificate
       - APP_BUNDLE_ID=bundle_id
       - IS_PRODUCTION=false
     volumes:
