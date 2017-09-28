@@ -24,7 +24,7 @@ ADD ./path-to-certificate.p12 ${PARSE_HOME}
     $ cd mongo-parse-server
     $ docker-compose up # add -d for `demon` mode
 
-## Build (if you make changes within the `parse-server` directory)
+## Build (if you make changes within the `Dockerfile`s)
 
     $ docker-compose build
 
