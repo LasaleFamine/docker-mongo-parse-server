@@ -9,7 +9,7 @@ Then, make sure to connect the `parse-dashboard` checking the `parse-dashboard/c
 
 ## APNS and GCM for Push Notifications
 You may want to send Push Notifications with the Parse server, you must configure GCM and APNS.
-> NOTE: don't forget to add the ***.p12*** certificate to your `parse-server` container, needed for Apple Push Notifications. You can modify the `Dockerfile`:
+> NOTE: don't forget to add the ***.p12*** certificate to your `parse-server` container, needed for Apple Push Notifications. You can modify the `parse-server/Dockerfile`:
 ```
 ...
 
