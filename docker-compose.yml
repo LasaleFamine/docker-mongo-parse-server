@@ -2,6 +2,8 @@ version: '3'
 services:
   mongo-parse-server:
     image: mongo
+    volumes:
+      - ./db:/data/db
   parse-server:
     build: ./parse-server
     links:
@@ -17,8 +19,6 @@ services:
       - PFX_PATH_PROD=passphrase_certificate
       - APP_BUNDLE_ID=bundle_id
       - IS_PRODUCTION=false
-    volumes:
-      - ./db:/data/db
     ports:
       - 1337:1337
   parse-dashboard:
